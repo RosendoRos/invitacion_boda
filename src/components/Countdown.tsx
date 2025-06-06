@@ -10,7 +10,7 @@ interface TimeProps {
 }
 
 export const Countdown: React.FC = () => {
-  const weddingDate = new Date('2025-11-15T16:00:00');
+  const weddingDate = new Date('2025-12-13T16:00:00');
   
   const renderer = ({ days, hours, minutes, seconds, completed }: TimeProps & { completed: boolean }) => {
     if (completed) {
