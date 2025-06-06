@@ -13,7 +13,7 @@ export const Location: React.FC = () => {
     {
       icon: <Calendar className="w-5 h-5 text-primary-brown" />,
       title: "Fecha",
-      details: "15 de Noviembre, 2025"
+      details: "13 de Diciembre, 2025"
     },
     {
       icon: <Clock className="w-5 h-5 text-primary-brown" />,
