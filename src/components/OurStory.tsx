@@ -3,6 +3,12 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import img1 from '../assets/img/img1.jpeg';
+import img2 from '../assets/img/img2.jpeg';
+import img3 from '../assets/img/img3.jpeg';
+import img4 from '../assets/img/img4.jpeg';
+import img5 from '../assets/img/img5.jpeg';
+import img6 from '../assets/img/img6.jpeg';
 
 export const OurStory: React.FC = () => {
   const [ref, inView] = useInView({
@@ -13,24 +19,30 @@ export const OurStory: React.FC = () => {
   // Sample images from Pexels (replace with your actual photos)
   const photos = [
     {
-      src: "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "Couple holding hands",
-      caption: "Nuestro primer viaje juntos"
+      src: img1,
+      alt: "Couple holding hands"
     },
     {
-      src: "https://images.pexels.com/photos/1415131/pexels-photo-1415131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "Couple at sunset",
-      caption: "El día de la propuesta"
+      src: img2,
+      alt: "Couple at sunset"
     },
     {
-      src: "https://images.pexels.com/photos/1050422/pexels-photo-1050422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      alt: "Couple hugging",
-      caption: "Celebrando nuestro aniversario"
+      src: img3,
+      alt: "Couple hugging"
     },
     {
-      src: "https://images.pexels.com/photos/842654/pexels-photo-842654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      src: img4,  
       alt: "Couple walking",
       caption: "Aventuras juntos"
+    },
+    {
+      src: img5,
+      alt: "Couple laughing",
+      caption: "Momentos felices"
+    },
+    {
+      src: img6,
+      alt: "Couple at the beach"
     }
   ];
 
@@ -49,7 +61,7 @@ export const OurStory: React.FC = () => {
       date: "Diciembre 2023",
       title: "La propuesta",
       description: "Durante una cena."
-    }
+    },    
   ];
 
   return (
